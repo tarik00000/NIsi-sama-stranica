@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/pocetna.css">
+    <link rel="icon" type="image/png" href="icons/ic.png" >
+    <title>Nisi Sama - Početna</title>
+</head>
+<body>
+    <header>
+        
+        <button id="navToggleButton">&#9776;</button>
+        <h1 class="nisi">Nisi Sama</h1>
+        
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="nasilje-nad-zenama.html">Nasilje nad ženama</a>
+            <a href="prve-linije-odbrane-i-zastite.html">Prve linije odbrane i zaštite</a>
+            <a href="sigurna-kuca.html">Sigurna kuća</a>
+            <a href="zasto-zena-ostaje-sa-nasilnikom.html">Zasto žena ostaje sa naslilnikom?</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    
+    </header>
+    <div class="Nisisama">
+        <h1>Nisi Sama</h1>
+        <p>Srednja zubotehnička škola</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
+    <div class="Onama">
+        <h2>O nama</h2>
+        <p>Iza ove stranice stoje učenici Srednje zubotehničke škole Sarajevo, odjeljenje III4 (generacija 2021-2025). <br>
+            Imamo za cilj, da na što vise načina potaknemo društvo da shvati nasilje nad ženama kao pravi i <br>
+             ozbiljni svjetski problem. <br>
+            Nije bitno koliko godina imala, kako izgledala ili kako se oblačila, svaka 1 u 3 žene osjeti bilo kakav <br>
+             oblik nasilja svakodnevno širom cijelog svijeta. <br>
+            Nadamo se da će pored svih drugih faktora <br>
+            koje smo učinili, i ova stranica biti put ka boljem sutra. <br>
+            Zapamti, <b> NISI SAMA.</b></p>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="citat">
+        <img src="/slike/citat slika.png" alt="">
+        <div class="citat-content">
+            <h2>"Feminizam nije o jačanju žena, žene su već jake. Radi se o promjeni načina na koji svijet doživljava tu snagu."</h2>
+            <p>G.D Anderson</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var btn = document.getElementById("scrollToTopBtn");
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        // Use scrollIntoView with behavior set to "smooth"
+        document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.documentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+<script>
+    document.getElementById("navToggleButton").addEventListener("click", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("show");
+    });
+</script>
+    <footer>
+        <h3>Nisi Sama</h3>
+    
+        <p>©2024 Nisi Sama</p>
+    </footer>
+    
+                
+      
+
+</body>
+</html>

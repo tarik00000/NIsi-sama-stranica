@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+  }
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DFA7E6; /* Blue background color */
+    color: #fff; /* White text color */
+    background-image: url(/slike/pocetna\ slika.png);
+    background-position: center 120px, center 1300px; /* Adjust vertical position */
+    background-size: 1900px; /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+header {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+nav {
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    padding: 4px;
+    padding-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+nav a:hover {
+    transform: scale(1.1);
+}
+.Nisisama {
+    
+    float: right;
+    width: 790px;
+            height: 687px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid;
+            position: relative;
+            backdrop-filter: blur(-60%); /* Adjust the blur value as needed */
+}
+.Nisisama h1, p{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #DFA7E6;
+    text-align: center;
+    
+}
+.Nisisama h1{
+    font-family: 'Oswald'; 
+    font-size: 50px;
+    padding-top: 190px;
+}
+.Nisisama p{
+    font-family: 'Avenir'; 
+    font-size: 20px;
+    padding-right: 8px;
+
+}
+.Onama p, h2{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+}
+.Onama h2{
+   
+    font-family: 'Oswald'; 
+    font-size: 40px;
+}
+.Onama p{
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.citat {
+    position: relative;
+    text-align: center;
+}
+
+.citat img {
+    width: 100%;
+}
+
+.citat-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.citat h2,
+.citat p {
+    color: #BB8FC2;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.citat p {
+    top: 80%;
+    font-size: 14px;
+}
+footer h3{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald'; 
+}
+footer p{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    font-family: 'Avenir'; 
+}
+#scrollToTopBtn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #BB8FC2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+/* ... (existing styles) ... */
+
+@media screen and (max-width: 600px) {
+    /* Styles for phones */
+
+    body {
+        background-size: auto, 1800px;
+        background-position: center 80px, center 1000px;
+    }
+    
+    header {
+        position: relative;
+    }
+    
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -70%;
+        width: 50%;
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 350px;
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+
+    .Nisisama {
+        top: 258px;
+        width: 180%;
+        height: 335px;
+        z-index: 1;
+    }
+    
+    .Nisisama h1 {
+        padding-left: 45%;
+        padding-top: 50px;
+    }
+
+    .Nisisama p {
+        padding-left: 45%;
+    }
+
+    .Onama {
+        background-color: #DFA7E6;
+        padding: 20px;
+    }
+    
+    .Onama h2 {
+        top: 5px;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .Onama p {
+        font-size: 15px;
+        color: #fff;
+    }
+    .citat img {
+        width: 200%;
+    }
+    
+    #scrollToTopBtn {
+        bottom: 10px; /* Adjust bottom position for smaller screens */
+        right: 10px; /* Adjust right position for smaller screens */
+    }
+}
+
+
+/* ... (existing styles) ... */
+
+/* Styles for larger screens (PCs) */
+@media screen and (min-width: 601px) and (max-width: 1224px) {
+    /* Styles for tablets */
+
+    body {
+        background-size: 1500px;
+        background-position: center 80px, center 1000px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 340px;
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+
+    .Nisisama {
+        top: 258px;
+        width: 100%;
+        height: 245px;
+        z-index: 1;
+    }
+
+    .Nisisama h1 {
+        padding-top: 50px;
+        font-size: 24px;
+    }
+
+    .Nisisama p {
+        font-size: 14px;
+    }
+
+    .Onama {
+        background-color: #DFA7E6;
+        padding: 20px;
+    }
+
+    .Onama h2 {
+        top: 5px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .Onama p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+   
+    
+}
+
+
+
+/* Styles for larger screens (PCs) */
+@media screen and (min-width: 1224px  ) {
+    #navToggleButton {
+        display: none; /* Hide the button on tablets */
+    }
+}
+
+
+

@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+  }
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DFA7E6; 
+    
+    
+    
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+header {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+nav {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    padding: 4px;
+    padding-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+nav a:hover {
+    transform: scale(1.1);
+}
+.container img{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    float: left;
+    width: 50%;
+    height: 500px;
+    
+}
+.all{
+    
+    background-color: #fff;
+   
+}
+.h2-text{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    padding-top: 30px;
+    color: #DFA7E6;
+    font-family: 'Oswald';
+    padding-top: 2%;
+    
+}
+.h2-text2{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    padding-top: 30px;
+    color: #DFA7E6;
+    font-family: 'Oswald';
+    padding-top: 6%;
+    
+}
+
+.text p{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    text-align: right;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2;
+    
+    padding-bottom: 30px;
+    
+}
+.image img{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    
+    width: 50%;
+    float: right;
+    padding-top: 77px;
+}
+.text2{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding-left: 90px;
+    line-height: 2;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 38px;
+    
+}
+
+footer h3{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald'; 
+}
+footer p{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    font-family: 'Avenir'; 
+    text-align: center;
+}
+#scrollToTopBtn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #BB8FC2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -70%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002; /* Set a higher z-index to ensure it's on top of Nisisama */
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 340px;
+        z-index: 1002; /* Set a higher z-index to ensure it's on top of Nisisama */
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        
+    }
+
+    nav a {
+        text-align: right;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+    .sig{
+        display: none;
+    }
+    .sig1 h1{
+        text-align: left;
+    }
+    .sig1 h2{
+        padding-top: 80%;
+        padding-left: 50%;
+        font-size: 25px;
+        
+    }
+    .sig1 p{
+        padding-top: 1%;
+        padding-left: 50%;
+        font-size: 20px;
+    }
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003; /* Set a higher z-index to ensure it's on top of Nisisama */
+    }
+
+    .container img, .image img {
+        width: 100%; /* Make images full-width on small screens */
+        float: none; /* Remove float on small screens */
+    }
+
+    .text2 {
+        padding-left: 0;
+    }
+    .text2,
+    .text {
+        padding-left: 0; /* Remove left padding for text blocks on small screens */
+        font-size: 15px;
+        text-align: center;
+    }
+    .text2{
+        text-align: left;
+    }
+    #scrollToTopBtn {
+        display: block; /* Show the scroll-to-top button on small screens */
+    }
+    .nisi{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1224px)  {
+    #navToggleButton {
+        display: none; /* Hide the button on larger screens */
+    }
+    .sig1{
+        display: none;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1224px) {
+    body {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+    .sig1{
+        display: inline;
+        
+    }
+    .sig1 h2{
+        margin-left: 10%;
+    }
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -70%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 340px;
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    .sig {
+        display: none;
+    }
+
+    .sig1 h1 {
+        text-align: left;
+    }
+
+    .sig1 h2 {
+        padding-top: 50%; /* Adjust padding for tablets */
+        padding-left: 50%;
+        font-size: 25px;
+    }
+
+    .sig1 p {
+        padding-top: 1%;
+        padding-left: 50%;
+    }
+   
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+
+    .container img,
+    .image img {
+        width: 100%;
+        float: none;
+        height: auto; /* Adjust height for tablets */
+    }
+
+    .text2 {
+        padding-left: 0;
+    }
+
+    #scrollToTopBtn {
+        display: block;
+    }
+
+    .nisi {
+        display: none;
+    }
+}

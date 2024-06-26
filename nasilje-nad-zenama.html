@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/nasilje-nad-zenama.css">
+    <link rel="icon" type="image/png" href="icons/ic.png" >
+    <title>Nisi Sama - nasilje nad zenama</title>
+</head>
+<body>
+    <header>
+        <button id="navToggleButton">&#9776;</button>
+        <h1>Nisi Sama</h1>
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="nasilje-nad-zenama.html">Nasilje nad ženama</a>
+            <a href="prve-linije-odbrane-i-zastite.html">Prve linije odbrane i zaštite</a>
+            <a href="sigurna-kuca.html">Sigurna kuća</a>
+            <a href="zasto-zena-ostaje-sa-nasilnikom.html">Zasto žena ostaje sa naslilnikom?</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <h1 class="nasilje1">Nasilje nad ženama</h1>
+    </header>
+    <h1 style="text-align: center; font-family: 'Oswald';color: white; animation: fadeIn 1.5s ease-in-out forwards;  " class="nasilje" >Nasilje nad ženama</h1>
+    
+    <br>
+    <br>
+    <div class="all">
+        <div class="container">
+        <img src="/slike/grafikon ucestalost.png" alt="">
+    </div>
+    
+    <div class="text">
+        <p>Nasilje nad ženama je bilo koji čin rodno uvjetovanog nasilja <br>
+             koji rezultira ili će vjerojatno rezultirati fizičkom, seksualnom <br>
+              ili 
+            psihičkom ozljedom ili patnjom za žene, uključujući prijetnje <br>
+             za takva djela, prisila ili namjerno oduzimanje slobode, bilo da <br>
+              se 
+            događa u javnosti ili u privatnom životu. Nasilje počinjeno <br>
+             nad nekim na temelju njihovog ili njezinog rodnog izražavanja <br>
+              ili identiteta, je rodno nasilje,
+             i uključuje intimno partnersko <br>
+              nasilje, zapostavljanje i zanemarivanje, ekonomsko nasilje, <br>
+               dječiji brak, i iskorištavanje,i reproduktivnu i seksualnu prisilu.</p>
+             
+    </div>
+</div>
+    <div class="all">
+    <div class="image">
+        <img src="/slike/grafikon najcesce.png" alt="">
+    </div>
+    <div class="text2">
+        <br>
+    <br>
+    <br>
+   
+        <p>Nasilje nad ženama i djevojčicama se manifestira u fizičkim, seksualnim i <br>
+             psihološkim oblicima koji obuhvataju: <br>
+
+            <ul>
+                <li>nasilje od strane intimnog partnera (udaranje, psihičko zlostavljanje, bračno <br>
+             silovanje, femicid);
+            <br>
+            <li> seksualno nasilje i uznemiravanje (silovanje, prisilne seksualne radnje, <br>
+            neželjeni seksualni kontakti, seksualno zlostavljanje djece, prisilni brak, ulično uznemiravanje, 
+             uhođenje, cyber- (virtuelno) uznemiravanje);<br>
+            
+             <li>  trgovina ljudima (ropstvo, seksualno iskorištavanje);<br>
+            
+                <li>   sakaćenje ženskih genitalija (žensko obrezivanje FGM) i <br>
+            
+                    <li>    dječiji, tj maloljetnički brak <br>
+            </li>
+        </ul>
+            Kratkoročne i dugoročne zdravstvene posljedice nasilja nad ženama su <br>
+             brojne i značajne. Žene koje doživljavaju nasilje imaju mnoštvo <br>
+              zdravstvenih tegoba, sa većim rizikom za ozljeđivanja, te štetnih seksualnih i <br>
+               reproduktivnih odnosa, a pored toga su zastupljene dugotrajne posljedice <br>
+                na mentalno zdravlje preživjelih.</p>
+              <br>
+            
+            
+    </div>
+</div>
+<button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var btn = document.getElementById("scrollToTopBtn");
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        // Use scrollIntoView with behavior set to "smooth"
+        document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.documentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+<script>
+    document.getElementById("navToggleButton").addEventListener("click", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("show");
+    });
+</script>
+    <footer>
+        <h3>Nisi Sama</h3>
+    
+        <p>©2024 Nisi Sama</p>
+    </footer>
+
+</body>
+</html>

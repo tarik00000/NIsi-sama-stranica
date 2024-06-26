@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DFA7E6; /* Blue background color */
+    color: #fff; /* White text color */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+
+nav {
+    font-family: 'TimesNewRoman', Times New Roman, Times, Baskerville, Georgia, serif;  
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+}
+
+nav a {
+    padding: 4px;
+    padding-top: 20px;
+    margin: 0 15px; /* Add margin to the links for spacing */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+.h1-text {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    font-family: 'Oswald';
+}
+
+.tel, .email {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: 'Avenir'; 
+    text-align: center;
+}
+
+.link {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: 'Avenir';
+    color: #fff;
+    text-decoration: none;
+}
+
+.instagram img {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto; /* Center the Instagram image */
+    display: block;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.instagram p {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    font-family: 'Avenir';
+}
+.kont1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.instagram img {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 15px;
+}
+footer h3 {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald'; 
+}
+
+footer p {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    font-family: 'Avenir'; 
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    .kont1 {
+        padding-right: 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        background-color: #DFA7E6;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 340px;
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+
+    .instagram img {
+        width: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 15px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1224px) {
+    /* Add styles for tablets here */
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 340px;
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+    .kont1 {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .instagram img {
+        width: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 1224px  ) {
+    #navToggleButton {
+        display: none; /* Hide the button on tablets */
+    }
+}

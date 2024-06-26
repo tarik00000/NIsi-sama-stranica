@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+  }
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DFA7E6; 
+    
+    
+    
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+header {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+nav {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    padding: 4px;
+    padding-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+nav a:hover {
+    transform: scale(1.1);
+}
+.container img{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    float: left;
+    width: 70%;
+    height: 500px;
+    
+}
+.all{
+    background-color: #fff;
+   
+}
+
+.text {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+   
+    padding-top: 2px;
+    padding-bottom: 1px;
+    
+    letter-spacing: 1px;
+    line-height: 1.3;
+    
+    
+}
+
+.image img{
+    animation: fadeIn 1.5s ease-in-out forwards;
+   
+    width: 50%;
+    
+    float: right;
+}
+.text2{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding-left: 40px;
+    line-height: 1.2;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    text-align: left;
+    padding-top: 2px;
+    
+}
+.h2-text{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    padding-top: 30px;
+    color: #DFA7E6;
+    font-family: 'Oswald';
+    padding-right: 200px;
+    
+}
+.h2-text2{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    padding-top: 10px;
+    color: #DFA7E6;
+    font-family: 'Oswald';
+    
+}
+.text3{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding-left: 370px;
+    line-height: 2;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    text-align: left;
+    padding-top: 2px;
+    
+   padding-bottom: 40px;
+}
+li{
+    padding-left: 10px;
+}
+
+footer h3{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald'; 
+}
+footer p{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    font-family: 'Avenir'; 
+    text-align: center;
+}
+#scrollToTopBtn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #BB8FC2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        position: relative;
+    }
+    .nisi{
+        display: none;
+    }
+    .zasto1{
+        
+        animation: fadeIn 1.5s ease-in-out forwards;
+        font-size: 15px;
+        
+        color: #fff;
+        font-family: 'Oswald';
+    }
+    .zasto1 h2{
+        padding-top: 70%;
+        
+    }
+    .zasto1 h1{
+        float: left;
+    }
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -70%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        background-color: #DFA7E6;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 280px;
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 8px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+   
+    .zasto{
+        display: none;
+    }
+    
+    .prve{
+        display: none;
+    }
+    .prve1{
+        padding-top: 80%;
+        padding-right: 16%;
+        font-size: 25px;
+        font-family: 'Oswald';
+        color: white; 
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    .container {
+        position: relative; /* Ensure container has a position set */
+    }
+    
+    .container img {
+        animation: fadeIn 1.5s ease-in-out forwards;
+        float: left;
+        width: 100%;
+        height: 200px;
+        position: relative; /* Ensure image has a position set */
+        z-index: 1; /* Set a lower z-index for the image */
+    }
+
+    .container img,
+    .image img {
+        width: 100%; /* Make images take up full width on small screens */
+        float: none; /* Remove float for images on small screens */
+    }
+    
+    .text2,
+    .text3 {
+        padding-left: 0; /* Remove left padding for text blocks on small screens */
+        font-size: 15px;
+    }
+
+    #scrollToTopBtn {
+        font-size: 12px; /* Adjust font size for the scroll-to-top button on small screens */
+    }
+    .text{
+        text-align: left;
+        font-size: 15px;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1224px) {
+    /* Adjust body font-family and background-color for tablets */
+    body {
+        font-family: 'Avenir', Arial, sans-serif;
+        background-color: #DFA7E6;
+    }
+
+    /* Adjust header styles for tablets */
+    header {
+        position: relative;
+        text-align: center;
+    }
+    .nisi{
+        display: none;
+    }
+    .zasto1{
+        
+        animation: fadeIn 1.5s ease-in-out forwards;
+        font-size: 20px;
+        
+        color: #fff;
+        font-family: 'Oswald';
+    }
+    .zasto1 h2{
+        padding-top: 70%;
+        
+    }
+    .zasto1 h1{
+        float: left;
+    }
+    .zasto{
+        display: none;
+    }
+    /* Adjust navigation styles for tablets */
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -80%;
+       
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 280px;
+        z-index: 1002; /* Set a higher z-index to ensure it's on top of .zasto1 */
+        border-bottom-left-radius: 5px;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        background-color: #DFA7E6; /* Adjust background color as needed */
+    }
+
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003; /* Set a higher z-index to ensure it's on top of .zasto1 */
+    }
+
+    nav a {
+        text-align: right;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        font-size: 15px;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+   
+
+    
+    .image img {
+        width: 100%; /* Make images take up full width on small screens */
+        float: none; /* Remove float for images on small screens */
+    }
+    .container img{
+        float: none;
+        padding-left: 10%;
+        width: 80%;
+    }
+    .text2,
+    .text3 {
+        padding-left: 0; /* Remove left padding for text blocks on small screens */
+        font-size: 15px;
+        text-align: left;
+    }
+    
+    
+    #scrollToTopBtn {
+        font-size: 12px; /* Adjust font size for the scroll-to-top button on small screens */
+    }
+
+    .text {
+        text-align: left; /* Center-align text for tablets */
+        font-size: 15px;
+    }
+}
+
+/* Keep the existing styles for screens larger than 768px */
+
+@media screen and (min-width:  1224px) {
+    
+
+    #navToggleButton {
+        display: none; /* Hide the button on larger screens */
+    }
+    .zasto1{
+        display: none;
+    }
+}

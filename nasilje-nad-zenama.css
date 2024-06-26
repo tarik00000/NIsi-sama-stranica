@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+  }
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DFA7E6; 
+    
+    
+    
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+header {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+nav {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    padding: 4px;
+    padding-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+nav a:hover {
+    transform: scale(1.1);
+}
+.container img{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    float: left;
+    width: 50%;
+    
+}
+.all{
+    background-color: #fff;
+   
+}
+
+.text{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    text-align: right;
+    text-align: center;
+    padding-top: 90px;
+    letter-spacing: 1px;
+    line-height: 2;
+    
+    padding-bottom: 1px;
+    
+}
+.image img{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    padding-top: 38px;
+    width: 50%;
+    float: right;
+}
+.text2{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding-left: 40px;
+    line-height: 1.5;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+    text-align: left;
+    
+}
+
+footer h3{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald'; 
+}
+footer p{
+    animation: fadeIn 1.5s ease-in-out forwards;
+    color: #fff;
+    font-family: 'Avenir'; 
+    text-align: center;
+}
+#scrollToTopBtn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #BB8FC2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-family: 'Avenir', Arial, sans-serif; /* Use Avenir font for mobile devices */
+        background-color: #DFA7E6;
+    }
+
+    header {
+        position: relative;
+        
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 40%;
+        background-color: #DFA7E6;
+        z-index: 1002; /* Set a higher z-index to ensure it's on top of Nisisama */
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        position: relative;
+        right: -3%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 280px;
+        z-index: 1002; /* Set a higher z-index to ensure it's on top of Nisisama */
+        border-bottom-left-radius: 5px;
+        
+    }
+
+    nav a {
+        text-align: right;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+
+    .container img,
+    .image img {
+        width: 100%; /* Make images take up 100% width on smaller screens */
+        float: none; /* Remove float for better responsiveness */
+    }
+    .container img{
+       
+        background-color: #DFA7E6;
+    }
+    .nasilje1{
+        padding-top: 70%;
+        padding-right: 30%;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        font-size: 25px;
+        
+        color: #fff;
+        font-family: 'Oswald';
+        
+    }
+    .text,
+    .text2 {
+        padding-top: 20px; /* Adjust padding for smaller screens */
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        padding-right: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px;
+    }
+
+    footer h3,
+    footer p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .nasilje{
+        display: none;
+        
+        
+    }
+    #scrollToTopBtn {
+        bottom: 10px; /* Adjust bottom position for smaller screens */
+        right: 10px; /* Adjust right position for smaller screens */
+    }
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003; /* Set a higher z-index to ensure it's on top of Nisisama */
+    }
+
+}
+@media screen and (min-width: 601px) and (max-width: 1224px) {
+    /* Adjust body font-family and background-color for tablets */
+    body {
+        font-family: 'Avenir', Arial, sans-serif;
+        background-color: #DFA7E6;
+    }
+
+    /* Adjust header styles for tablets */
+    header {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Adjust navigation styles for tablets */
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 60%; /* Increase width for tablets */
+        background-color: #DFA7E6;
+        z-index: 1002;
+        transition: right 0.5s ease;
+    }
+
+    nav.show {
+        position: relative;
+        right: -1%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: auto; /* Adjust height for tablets */
+        z-index: 1002;
+        border-bottom-left-radius: 5px;
+        padding-top: 45px;
+    }
+
+    nav a {
+        text-align: right;
+        padding: 10px;
+       
+        color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    /* Adjust container and image styles for tablets */
+    .container img,
+    .image img {
+        width: 100%;
+        float: none;
+    }
+
+    /* Adjust text styles for tablets */
+    .text,
+    .text2 {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        text-align: center; /* Center-align text for tablets */
+    }
+    .text2{
+        text-align: left;
+    }
+    /* Adjust footer styles for tablets */
+    footer h3,
+    footer p {
+        font-size: 16px;
+        text-align: center; /* Center-align footer text for tablets */
+    }
+
+    /* Adjust scrollToTopBtn position for tablets */
+    #scrollToTopBtn {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Adjust navToggleButton styles for tablets */
+    #navToggleButton {
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+        color: #DFA7E6;
+        background-color: #fff;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+    .nasilje{
+        display: none;
+    }
+    .nasilje1{
+        padding-top: 40%;
+        padding-right: 30%;
+    }
+}
+
+/* Keep the existing styles for screens larger than 768px */
+@media screen and (min-width: 1224px) {
+    #navToggleButton {
+        display: none;
+    }
+
+    .nasilje1 {
+        display: none;
+    }
+}

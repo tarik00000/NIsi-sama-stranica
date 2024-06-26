@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/sigurna-kuca.css">
+    <link rel="icon" type="image/png" href="icons/ic.png" >
+    <title>Nisi Sama - Sigurna kuća</title>
+</head>
+<body>
+    <header>
+        <button id="navToggleButton">&#9776;</button>
+        <h1 class="nisi">Nisi Sama</h1>
+        <div class="sig1">
+            <h1>Nisi Sama</h1>
+            <h2 style=" font-family: 'Oswald';color: white; animation: fadeIn 1.5s ease-in-out forwards; ">Sigurna kuća</h2>
+            <p style="color: white; animation: fadeIn 1.5s ease-in-out forwards;  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  ">Sklonište za žene i djecu žrtve nasilja u porodici</p>
+        </div>
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="nasilje-nad-zenama.html">Nasilje nad ženama</a>
+            <a href="prve-linije-odbrane-i-zastite.html">Prve linije odbrane i zaštite</a>
+            <a href="sigurna-kuca.html">Sigurna kuća</a>
+            <a href="zasto-zena-ostaje-sa-nasilnikom.html">Zasto žena ostaje sa naslilnikom?</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+       
+    </header>
+    <div class="sig">
+    <h1 style="text-align: center; font-family: 'Oswald';color: white; animation: fadeIn 1.5s ease-in-out forwards; ">Sigurna kuća</h1>
+    <p style="color: white; animation: fadeIn 1.5s ease-in-out forwards; text-align: center; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  ">Sklonište za žene i djecu žrtve nasilja u porodici</p>
+</div>
+    <br>
+    <br>
+    <div class="all">
+        <div class="container">
+        <img src="/slike/ruke.png" alt="">
+    </div>
+    <div class="h2-text">
+        <h2>NISI KRIVA!</h2>
+       </div>
+    <div class="text">
+        <p>Od oktobra 2000. godine Fondacija lokalne demokratije vodi <br>
+             jedinu Sigurnu kuću - Sklonište za žene i djecu žrtve nasilja u <br>
+              porodici na području Kantona Sarajevo. <br>
+
+            Kapacitet Skloništa je 25 korisnica/ka, 10 žena i 15-ero djece. <br>
+            
+            Osnovni cilj rada Skloništa je obezbjeđenje fizičke zaštite i <br>
+             sigurnosti žrtava, kao i psihosocijalni tretman u cilju prevazilaženja <br>
+              traumatskih iskustava i reintegracije u društvenu zajednicu.</p>
+             <br><br><br>
+    </div>
+</div>
+
+    <div class="all">
+    <div class="image">
+        <img src="/slike/ruke2.png" alt="">
+    </div>
+    <div class="h2-text2">
+        <h2>NISI SAMA!</h2>
+       </div>
+    <div class="text2">
+      
+        <p>
+           
+            Ukoliko ste žrtva nasilja u porodici u Sigurnoj kući vam nudimo: <br>
+            
+          <ul>
+            <li> smještaj na zaštićenoj i tajnoj lokaciji, <br>
+            
+                <li>  psihosocijalni tretman, <br>
+            
+                    <li>  mogućnost da preuzmete kontrolu nad svojim životom i <br>
+                         osamostalite se za život bez nasilja <br>
+            
+                        <li> smještaj u sigurnoj kući je besplatan <br>
+            
+                            <li>  možete biti smješteni tokom 24 sata.
+        </li>
+        </ul> 
+        <br>
+        <br>
+        <br>
+       
+            
+           
+    </div>
+</div>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var btn = document.getElementById("scrollToTopBtn");
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        // Use scrollIntoView with behavior set to "smooth"
+        document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.documentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+<script>
+    document.getElementById("navToggleButton").addEventListener("click", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("show");
+    });
+</script>
+    <footer>
+        <h3>Nisi Sama</h3>
+    
+        <p>©2024 Nisi Sama</p>
+    </footer>
+
+</body>
+</html>
